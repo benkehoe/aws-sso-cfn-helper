@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aws-sso-cfn-helper"
+version = "0.1.0"
+description = "Work around current capabilities of AWS SSO CloudFormation resources"
+authors = ["Ben Kehoe <ben@kehoe.io>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/benkehoe/aws-sso-cfn-helper"
+
+[tool.poetry.scripts]
+aws-sso-cfn-helper = 'aws_sso_cfn_helper.template:main'
+aws-sso-lookup     = 'aws_sso_cfn_helper.lookup:main'
+
+[tool.poetry.dependencies]
+python = "^3.5"
+boto3 = "^1.14.60"
+pyyaml = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
