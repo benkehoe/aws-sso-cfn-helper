@@ -9,6 +9,18 @@ I am against client-side generation of CloudFormation templates, and look forwar
 1. OUs as targets for assignments
 2. An `AWS::SSO::AssignmentSet` resource that allows specifications of multiple principals, permission sets, and targets, and performs the combinatorics directly.
 
+## Install
+
+I recommend you install `aws-sso-cfn-helper` with [`pipx`](https://pipxproject.github.io/pipx/), which installs the tool in an isolated virtualenv while linking the script you need.
+
+```bash
+# with pipx
+pipx install aws-sso-cfn-helper
+
+# without pipx
+python -m pip install --user aws-sso-cfn-helper
+```
+
 ## Usage
 All of the identifiers required below can be looked up using the included `aws-sso-lookup` utility, documented below. On both utilities the credentials used can be controlled with the `--profile` paramater.
 
