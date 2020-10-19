@@ -22,7 +22,7 @@ python -m pip install --user aws-sso-cfn-helper
 ```
 
 ## Usage
-All of the identifiers required below can be looked up using the included `aws-sso-lookup` utility, documented below. On both utilities the credentials used can be controlled with the `--profile` paramater.
+All of the identifiers required below can be looked up using the included `aws-sso-lookup` utility, documented below. On both utilities the credentials used can be controlled with the `--profile` parameter.
 
 ### AWS SSO instance id
 You can provide the AWS SSO instance id directly using the `--instance` or `-i` parameter, or you can omit it and `aws-sso-cfn-helper` will query your account for the instance id. The instance id will be used to fill out permission set ARNs, if that information is missing.
