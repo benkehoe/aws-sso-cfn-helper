@@ -1,4 +1,7 @@
 # aws-sso-cfn-helper
+
+> :warning: This tool was superseded by the [CloudFormation capabilities of `aws-sso-util`](https://github.com/benkehoe/aws-sso-util/blob/master/docs/cloudformation.md).
+
 ## Work around current capabilities of AWS SSO CloudFormation resources
 
 AWS SSO's CloudFormation support currently only includes [`AWS::SSO::Assignment`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sso-assignment.html), which means for every combination of principal (group or user), permission set, and target (AWS account), you need a separate CloudFormation resource. Additionally, AWS SSO does not support OUs as targets, so you need to specify every account separately.
